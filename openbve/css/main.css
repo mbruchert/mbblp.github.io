@@ -1,0 +1,22 @@
+
+.affix {
+  top: 0;
+  width: 100%;
+}
+
+.affix + .container-fluid {
+  padding-top: 70px;
+}
+@media (max-width: 1024px) {
+.navbar li {
+ float:left !important }
+ .navbar-nav {
+  margin: 0 !important;
+}
+
+.html5video{
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:-1;
+}
