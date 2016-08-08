@@ -9,8 +9,9 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link href="http://vjs.zencdn.net/5.10.7/video-js.css" rel="stylesheet">
-	<script src="http://vjs.zencdn.net/5.10.7/video.js"></script>
+	<link href="http://vjs.zencdn.net/5.8.8/video-js.css" rel="stylesheet">
+	<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+	<script src="http://vjs.zencdn.net/5.8.8/video.js"></script>
 </head>
 <body>
 
@@ -19,6 +20,8 @@
 	<h2>A free and opensource 3d real train simulator</h2>
 	<a class="btn btn-lg btn-default" href="download"><span class="glyphicon glyphicon-download"></span> Get it</a>
 </div>
+
+
 
 <nav class="navbar" style="background-color:#EE8C11;z-index: 1030;" data-spy="affix" data-offset-top="297">
 		<ul class="nav navbar-nav">
@@ -31,27 +34,54 @@
 	</ul>
 </nav>
 
+
+
 <div class="container-fluid text-center" style="background-color: #CFCFCF">
   <h2>About OpenBVE</h2>
   
-    <div class="html5video"><center><video id="introduction" class="video-js" controls preload="yes" width="640" height="400" poster="https://mbblp.github.io/img/openbve/BR_Class_395_Hitachi_Javelin.png" data-setup="{}">
-    <source src="https://r20---sn-4g57kndy.googlevideo.com/videoplayback?upn=tVQyZD_4RAc&source=youtube&pl=17&ei=9penV87LGeOXiQbrmJiACg&itag=22&lmt=1421827132734015&cnr=14&ipbits=0&dur=1625.559&sver=3&expire=1470622806&requiressl=yes&initcwndbps=605000&nh=IgpwZjAxLmZyYTE2Kg04MC4xNTAuMTcwLjY5&mime=video%2Fmp4&key=yt6&ratebypass=yes&fexp=9413142%2C9419451%2C9422596%2C9428398%2C9431012%2C9432564%2C9433096%2C9433223%2C9433946%2C9435526%2C9437066%2C9437553%2C9437948%2C9437982%2C9438312%2C9438327%2C9438662%2C9438804%2C9439180%2C9439580%2C9440529%2C9441373%2C9442255%2C9442424%2C9443000%2C9443049&signature=2979FF26F90A7C440E53F6EF66F728A5212E5A8B.140663018371D31ACCB05824A54CF611A5305DCE&ip=91.37.135.216&mt=1470600672&sparams=cnr%2Cdur%2Cei%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cnh%2Cpl%2Cratebypass%2Crequiressl%2Csource%2Cupn%2Cexpire&mv=m&ms=au&mm=31&mn=sn-4g57kndy&id=o-AD2C8PR02d50STy8U0ntlp39TKj9eILW11jhbw83VnEa" type='video/mp4'>
-    <p class="vjs-no-js">
-      To view this video please enable JavaScript, and consider upgrading to a web browser that
-      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video and Mp4 Video. <a href="https://www.youtube.com/html5">Test your Browser</a>
-    </p>
-  </video></center></div>
+    <div class="html5video"><center>
+		<video id="my-video" class="video-js" controls preload="auto" width="800" height="450" poster="img/poster.png" data-setup="{}">
+			<source src="https://archive.org/download/trailer_201608/trailer.mp4" type='video/mp4'>
+			<p class="vjs-no-js">
+			To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>. <a href="https://youtube.com/html5">Check Your browser</a>
+			</p>
+		</video>
+		</center>
+	</div>
   
 	<h3>Openbve is a train simulator suporting addons, like extra trains or routes. Its using SDL for 3d animtions. <br>Its available for Linux, Windows and Mac. Openbve is Powered by a <a href="community">community</a> which makes many extra addons for you. <h3>
 </div>
 
+
+
 <div class="container-fluid text-center" style="background-color: #EEE7E7">
 	<h2>Screenshots</h2>
-	
+	<iframe frameborder="0" src="frames/introslider.html" width="800" height="450"></iframe>	
+</div>
+
+
+
+<div class="container-fluid text-center" align="center" style="background-color: #CFCFCF">
+	<h2>News</h2>
+	<div class="well well-xs col-sm-5" align="left">
+	<p><h4>site:</h4>
+	<li>start working on this new beautiful site design</li></p>
+	<p><h4>support:</h4>
+	<li>Windows XP is no longer supported in openBVE v1.4.3.1 due to requiring .NET 4.5!</li>
+	<li>openBVE v1.4.3 is the last version that supports Windows XP!</li></p>
+	<p><h4>next steps:</h4>
+	Thanks to our site co-founder Blue18, we may be embarking on a few new site upgrades for everyone to enjoy. Please stay tuned for the following:
+	<li>Online Web Store</li>
+	<li>Moving OpenBVE to mobile platforms</li</p>
+
+	</div>
+	<div class="col-sm-5" align="right">
+	<iframe frameborder="0" src="frames/latest-commits-widget/index.html?username=shadow93&repo=openbve&limit=20" height="330" width="600"></iframe>
+	</div>
 </div>
 
 <div class="container footer" style="background-color: #FFB43E">
-<h5 class="text-center">The content is available under ther terms of the Creative Commons License (CC-SA-NC 4.0)</h5>
+<h5 class="text-center">copyright (c) 2016 JBBgameich, MBBlp. All images and text is available under ther terms of the Creative Commons License (CC-SA-NC 4.0)</h5>
 
 </body>
 </html>
