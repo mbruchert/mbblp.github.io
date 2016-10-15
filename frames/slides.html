@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<body>
+
+
+<h2 class="w3-center">Ein par screenshoots</h2>
+
+<div class="w3-content" style="max-width:800px;position:relative">
+  <img class="mySlides w3-animate-right" src="http://jbbgameich.github.io/file/image/server_MBB_house.png" style="width:100%">
+  <img class="mySlides w3-animate-left" src="http://jbbgameich.github.io/file/image/server_spawn.png" style="width:100%">
+  <img class="mySlides w3-animate-right" src="http://jbbgameich.github.io/file/image/server_LukPlays_market.png" style="width:100%">
+  <img class="mySlides w3-animate-left" src="http://jbbgameich.github.io/file/image/server_rathaus.png" style="width:100%">
+
+  <a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">&#x2039;</a>
+  <a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">&#x203a;</a>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
