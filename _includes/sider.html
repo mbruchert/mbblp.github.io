@@ -1,0 +1,32 @@
+
+
+
+<div class="col-xs-2 span3">
+    <img alt="MBB" height="120" src="https://yt3.ggpht.com/-rJSnNUXwBic/AAAAAAAAAAI/AAAAAAAAAAA/z_QSxHxuVXA/s108-c-k-no-mo-rj-c0xffffff/photo.jpg" class="img-circle miaopasi" /></div>
+</div>
+<div class="col-xs-2 span3">
+  <ul class="nav nav-list">
+<hr>
+    <li class="w3-panel w3-white w3-bottombar  w3-border-green"><big><b>Kategorien</b></big></li>
+      {% for category in site.categories %}
+        <li><a class="w3-btn w3-white w3-border w3-border-green w3-round-xlarge" href="/category/#{{ category[0] }}">{{ category[0] }}</a></li>
+        <p></p>
+      {% endfor %}
+      <hr>
+    <li class="w3-panel w3-white w3-bottombar  w3-border-green"><big><b>Tags</b></big></li>
+    <br />
+    {% for tag in site.tags %}
+        <li><a class="w3-btn w3-white w3-border w3-border-green w3-round-xlarge" href="/tags/#{{ tag[0] }}">{{ tag[0] }}</a></li>
+        <p></p>
+    {% endfor %}
+    <hr>
+      <li class="w3-panel w3-white w3-bottombar  w3-border-green"><big><b>Links</b></big></li>
+
+    <li><a class="w3-btn w3-white w3-border w3-border-green w3-round-xlarge" href="https://www.youtube.com/channel/UCE4l3DpVr14JcCsB7euXyQQ">youtube</a></li>
+            <p></p>
+    <li><a class="w3-btn w3-white w3-border w3-border-green w3-round-xlarge" href="https://www.vid.me/mbblp">Vid.me</a></li>
+            <p></p>
+    <li><a class="w3-btn w3-white w3-border w3-border-green w3-round-xlarge" href="https://www.twitch.tv/mbblp">Twitch</a></li>
+  </ul>
+</div>
+

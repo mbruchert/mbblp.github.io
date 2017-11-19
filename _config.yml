@@ -1,0 +1,11 @@
+# Site settings
+title: MBB
+email: mbb@protonmail.ch
+description: MBB ist nh krasser Typ
+github_username:  mbblp
+
+# Build settings
+markdown: kramdown
+paginate: 3
+gems: [jekyll-paginate]
+paginate_path: "/page/:num"
